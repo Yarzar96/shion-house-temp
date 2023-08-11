@@ -6,7 +6,7 @@
         </title>
      
         <!--bootstrap 5.3.x css1 js1-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 
         <!--fontawesome css1-->
         <!-- fontawesome css1 version 5.15.4 -->
@@ -17,8 +17,10 @@
         <link rel="stylesheet" href="./asset/libs/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
 
         <!--annimate style css1-->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <linkrel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
+        <!-- Custom Css -->
+        <link rel="stylesheet" href="./css/style.css">
         
        
     </head>
@@ -26,66 +28,204 @@
        <!--start header-->
 
        <header>
-        <nav class="navbar navbar-expand-lg">
+        <nav class="py-3 navbar navbar-expand-lg">
         <div class="container-fluid">
-            <div class="w-100 d-flex  justify-content-between  align-items-center">
+            <div class="w-100 d-flex justify-content-between align-items-center">
                 <div class=" d-flex  nav_left_side">
-                    <a href="#" class="me-3 navbar-brand">
+                    <a href="#" class="p-0 me-3 navbar-brand">
                         <img src="./asset/imgs/logos/logo.png.webp" width="150px" alt="logo">
                     </a>
-                    <div class="ms-5">
-                    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#mynav">
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                    </button>
-                    <div id="mynav" class="navbar-collapse collapse">
-                        <ul class="navbar-nav text-uppercase fw-semibold">
-                            <li  class="nav-item" > <a href="#" class="nav-link">Home</a></li>
-                            <li  class="nav-item" > <a href="#" class="nav-link">Shop</a></li>
-                            <li  class="nav-item" > <a href="#" class="nav-link">About</a></li>
-                            <li  class="nav-item" > <a href="#" class="nav-link">Blog</a></li>
-                            <li  class="nav-item" > <a href="#" class="nav-link">Content</a></li>
-                        </ul>
-                    </div>
-                </div>  
-
+                    <div class="ms-0 ms-lg-5 nav_btn_list_group">
+                        <div class="d-flex justify-content-end">
+                            <div class="px-2 align-items-center nav_toggle_btn_group">
+                                <span class="d-block d-lg-none text-uppercase fw-bold">Menu</span>
+                                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#mynav">
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div id="mynav" class="navbar-collapse collapse">
+                            <ul class="navbar-nav text-uppercase fw-semibold">
+                                <li  class="nav-item" > <a href="#" class="nav-link">Home</a></li>
+                                <li  class="nav-item" > <a href="#" class="nav-link">Shop</a></li>
+                                <li  class="nav-item" > <a href="#" class="nav-link">About</a></li>
+                                <li  class="nav-item" > <a href="#" class="nav-link">Blog</a></li>
+                                <li  class="nav-item" > <a href="#" class="nav-link">Content</a></li>
+                            </ul>
+                        </div>
+                    </div>  
                 </div>
-            </div>
-                <div class="nav_right_side bg-primary">
-                    <ul class="list-unstyled d-flex content_icon_group">
-                        <li  class="nav-item" > <a href="#" class="nav-link"><i class="fab fa-facebook"></i></a></li>
-                        <li  class="nav-item" > <a href="#" class="nav-link"><i class="fab fa-twitter"></i></a></li>
-                        <li  class="nav-item" > <a href="#" class="nav-link"><i class="fab fa-youtube"></i></a></li>
-                        <li  class="nav-item" > <a href="#" class="nav-link"><i class="fab fa-search"></i></a></li>
-                        <li  class="nav-item" > <a href="#" class="nav-link"><img src="" alt="User"></a></li>
+                
+            
+                <div class="nav_right_side">
+                    <ul class="p-0 m-0 list-unstyled d-flex content_icon_group">
+                        <li  class="px-2" > <a href="#" class="nav-link"><i class="fab fa-facebook"></i></a></li>
+                        <li  class="px-2" > <a href="#" class="nav-link"><i class="fab fa-twitter"></i></a></li>
+                        <li  class="px-2" > <a href="#" class="nav-link"><i class="fab fa-youtube"></i></a></li>
+                        <li  class="px-2" > <a href="#" class="nav-link"><i class="fab fa-search"></i></a></li>
+                        <li  class="px-2" > 
+                            <a href="#" class="nav-link">
+                            <img src="./asset/imgs/avators/agent-2.jpg" class="rounded-circle" width="100%" height="100%" alt="User">
+                            </a></li>
                         
                     </ul>
 
                 </div>
-
+            </div>
 
             
-            </div>
         </div>
+        
         </nav>
+
+        <!--start banner section-->
+
+        <!-- <section>
+            <div class="container-fluid">
+                <div id="banner_carousel" class="owl-carousel owl-theme owl-loaded">
+                    <div class="owl-stage-outer">
+                        <div class="owl-stage">
+                            <div class="owl-item">
+                                <div class="banner_content" style="background-image: url(./asset/imgs/banners/h1_hero1.png.webp);">
+                                    <div class="row justify-content-center">
+                                        <div class="col-lg-6 col-md-10 col-sm-12">
+                                            <div class="banner_content_header">
+                                                <h1 class="text-uppercase">
+                                                 Fashion Changing Always
+                                                </h1> 
+                                             </div>
+                                        </div>
+
+                                    </div>
+                                    
+                                    <div class="banner_content_footer">
+                                        <!-- start global btn -->
+                                        <div class="text-center  global_btn_container">
+                                            <a href=#"" class="global_btn">Shop Now</a>
+                                        </div>
+                                        <!-- end global btn -->
+                                    </div> 
+                                </div>
+                            </div>
+                            <!-- <div class="owl-item">2</div>
+                            <div class="owl-item">3</div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+         <!--end banner section-->
+
        </header>
 
        <!--end header-->
 
-        <script src="./js/app.js"></script>
+       <!-- start show case menu section -->
 
-        <!--Jquery V 3.7-->
-        <script src="./asset/libs/jquery.js"></script>
+       <section>
+        <div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="showcase_content_container"></div>
+                </div>
+                <!-- <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div></div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div></div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div></div>
+                </div> -->
+
+            </div>
+        </div>
+       </section>
+       <!-- end show case menu section -->
+
+
+       <!-- start new arrival section -->
+       <section>
+        <div class="container">
+            <!-- start global title -->
+            <div class="global_title_container">
+                <h1 class="text-center text-uppercase global_title"> New <br> Arrival</h1>
+            </div>
+            <!-- end global title -->
+            <div class="arrival_content_container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-12 mb-3 bg-primary">
+                        <div class="product_main_container">
+                            <div class="product_edit_btn">
+                                <i class="fas fa-edit"></i>
+                            </div>
+                            <div class="product_img">
+                                <img src="./asset/imgs/products/arrival1.png.webp" width="100%" alt="product-1">
+                            </div>
+                            <div class="proudct_name_group">
+                                <h4 class="text-center">Kinitted Jumber</h4>
+                                <span class="text-center d-block fw-semibold">$30.00</span>
+                            </div>
+                            <div class="product_edit_form">
+                                <form action="" method="" enctype="multipart/form-data">
+                                    <div class="form-group mb-2">
+                                        <input type="text" name="proudct_name" id="proudct_name" class="form-control rounded-0 shadow-none outline-none" placeholder="Product Name">
+                                    </div>
+                                    <div class="form-group mb-2">
+                                        <input type="text" name="proudct_price" id="proudct_price" class="form-control rounded-0 shadow-none outline-none" placeholder="Product Price">
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-12 mb-2">
+                                            <div class="d-grid">
+                                                <button type="reset" class="btn btn-warning rounded-0 fw-semibold text-uppercase">Reset</button>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-lg-6 col-md-12 mb-2">
+                                            <div class="d-grid">
+                                                <button type="submit" class="btn btn-success rounded-0 fw-semibold text-uppercase">Submit</button>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-lg-6 col-md-12 mb-2">
+                                            <div class="d-grid">
+                                                <a href="#" class="btn btn-danger rounded-0 fw-semibold text-uppercase">Delete</a>
+                                                
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+       </section>
+
+       <!-- end new arrival section -->
+
+        
+
+       
 
         <!--bootstrap 5.3.x css1 js1-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+         <!--Jquery V 3.7- css0 js1-->
+         <script src="./asset/libs/jquery.js"></script>
 
          <!--owlcarousel css2 js1-->
          <script src="./asset/libs/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
 
-          <!--custom css-->
-        <link rel="stylesheet" href="./css/style.css">
+          <!--custom js-->
+          <script src="./js/app.js"></script>
 
         
     </body>
