@@ -229,6 +229,10 @@
   font-size: 60px;
   font-weight: 700;
 }
+.global_title_para {
+  font-size: 22px;
+  line-height: 1.5;
+}
 
 /* end global title */
 
@@ -244,6 +248,15 @@
   box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
 
 }
+.proudct_name_group{
+  width: 100%;
+  position: absolute;
+  display: none;
+}
+.proudct_name_group.active {
+  display: block;
+
+}
 
 .proudct_name_group h4 {
   color: var(--global-text-color);
@@ -257,8 +270,111 @@
   right: 20px;
   top: 20px;
 }
+.product_edit_btn.acttive {
+  color: var(--global-btn-color);
+}
+
+.product_edit_form {
+  width: 100%;
+  position: absolute;
+  z-index: 5;
+  display: none;
+}
+
+.product_edit_form.active {
+  display: block;
+}
 
 /* end new arrival section */
+
+/* start about section */
+
+.about_title_container {
+  background-image: url("./../asset/imgs/backgrounds/section_bg01.png.webp");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.about_title {
+  padding-bottom: 50px;
+  color: var(--global-white-color);
+  font-family: var(--global-cinzel-font);
+  font-size: 55px;
+}
+/* end about section */
+
+/* start established section */
+
+.established_content_container {
+  height: 70vh;
+  /* background-image: url("./../asset/imgs/backgrounds/popular-imtes1.png.webp"); */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+
+  transition: var(--global-transition);
+}
+
+.established_content h2 {
+  color: var(--global-white-color);
+  font-size: 35px;
+  font-weight: 400;
+}
+.established_content_container:hover {
+ background-size: 120%;
+}
+
+/* end established section */
+
+/* start service section */
+
+
+.service_section {
+  background: color #f4f4f4;;
+}
+
+.service_title {
+  color: var(--global-text-color);
+  font-size: 20px;
+}
+
+/* end service section */
+
+/* start contact section */
+
+.form_title {
+  color: var(--global-text-color);
+  font-family: var(--global-cinzel-font);
+  font-size: 30px;
+  font-weight: 600;
+  
+}
+
+.contact_form .form-control {
+  padding: 10px 20px;
+  border: 1px solid #e6e6e6;
+}
+
+.contact_form .form-control::placeholder {
+  color: #aaa;
+  font-family: var(--global-poppins-font);
+  font-size: 13px;
+}
+
+.contact_form button {
+  color: var(--global-btn-color);
+  letter-spacing: 2px;
+  border: 1px solid var(--global-btn-color);
+}
+
+.contact_form button:hover {
+  color: var(--global-white-color);
+  background-color: var(--global-btn-color);
+  border: 1px solid var(--global-btn-color);
+}
+
+
+/* end contact section */
 
 
 
